@@ -19,6 +19,8 @@ syn region fountainDialogue matchgroup=fountainCharacter start="\(^\s*@\(.*\)\)\
 syn match fountainParenthetical "^\s*\((.*)\)$" contained contains=fountainBoneyard,fountainNotes
 syn match fountainLyric "^\s*\~\(.*\)$" contained contains=fountainBoneyard,fountainNotes
 syn match fountainTransition "\(^\(\L\)* TO:$\)\|\(^\(\L\)* IN:$\)\|\(^\(\L\)* CREDITS:$\)\|\(^\(\L\)* OUT:$\)" contains=fountainBoneyard,fountainNotes
+syn match fountainTransition1 "\(^\(\L\)* SHOT:$\)\|\(^\(\L\)* FRAME:$\)\|\(^\(\L\)* WITH:$\)\|\(^\(\L\)* SCREEN:$\)" contains=fountainBoneyard,fountainNotes
+syn match fountainTransition2 "\(^\(\L\)* CUT:$\)\|\(^\(\L\)* OVER:$\)\|\(^\DISSOLVE:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransitionForced "^\s*>\(.*\)" contains=fountainBoneyard,fountainNotes
 syn match fountainCentered "^\s*>\(.*\)<" contains=fountainBoneyard,fountainNotes
 syn match fountainUnderlined "_[^_]*_" 
@@ -48,6 +50,8 @@ hi def link fountainCharacter			identifier
 hi def link fountainDialogue			statement
 hi def link fountainParenthetical		conditional
 hi def link fountainTransition			todo
+hi def link fountainTransition1			todo
+hi def link fountainTransition2			todo
 hi def link fountainLyric				normal
 hi def link fountainTransitionForced	todo
 hi def link fountainCentered			character
