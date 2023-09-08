@@ -20,9 +20,9 @@ syn match fountainParenthetical "^\s*\((.*)\)$" contained contains=fountainBoney
 syn match fountainLyric "^\s*\~\(.*\)$" contained contains=fountainBoneyard,fountainNotes
 syn match fountainTransition "\(^\(\L\)* TO:$\)\|\(^\(\L\)* IN:$\)\|\(^\(\L\)* CREDITS:$\)\|\(^\(\L\)* OUT:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransition1 "\(^\(\L\)* SHOT:$\)\|\(^\(\L\)* FRAME:$\)\|\(^\(\L\)* WITH:$\)\|\(^\(\L\)* SCREEN:$\)" contains=fountainBoneyard,fountainNotes
-syn match fountainTransition2 "\(^\(\L\)* CUT:$\)\|\(^\(\L\)* OVER:$\)" contains=fountainBoneyard,fountainNotes
-"Single Word Transitions - WIPE doesn't work?
-syn match fountainTransition3 "\(^\DISSOLVE:$\)\|\(^\WIPE:$\)" contains=fountainBoneyard,fountainNotes
+syn match fountainTransition2 "\(^\(\L\)* CUT:$\)\|\(^\(\L\)* OVER:$\)\(^\DISSOLVE:$\)" contains=fountainBoneyard,fountainNotes
+"WIPE work around - an UPPERCASE single word with a colon
+syn match fountainTransition3 "\(^\(\L\)*:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransitionForced "^\s*>\(.*\)" contains=fountainBoneyard,fountainNotes
 syn match fountainCentered "^\s*>\(.*\)<" contains=fountainBoneyard,fountainNotes
 syn match fountainUnderlined "_[^_]*_" 
