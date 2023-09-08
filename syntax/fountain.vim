@@ -38,8 +38,8 @@ syn region fountainHeader4 start="^\s*#### " end="$" contains=fountainBoneyard,f
 syn region fountainHeader5 start="^\s*##### " end="$" contains=fountainBoneyard,fountainNotes
 syn region fountainHeader6 start="^\s*###### " end="$" contains=fountainBoneyard,fountainNotes
 syn region fountainSynopses start="^\s*= " end="$" contains=fountainBoneyard,fountainNotes
-syn region fountainSceneHeading start="^\s*\(\.[^\. ]\|INT\. \|EST\. \|EXT\. \|INT\.\/EXT\. \|INT\/EXT\. \|INT \|EXT \|INT\/EXT \|I\/E \)\c" end="$" contains=fountainSceneNumber,fountainBoneyard,fountainNotes 
-syn region fountainAction matchgroup=fountainSceneHeading start="^\s*\(\.[^\. ]\|INT\. \|EST\. \|EXT\. \|INT\.\/EXT\. \|INT\/EXT\. \|INT \|EXT \|INT\/EXT \|I\/E \)\(.*\)$\n*\ze\a\c" end="\n\n" contains=fountainBoneyard,fountainNotes,fountainBold,fountainUnderlined,fountainItalic,fountainBoldItalic
+syn region fountainSceneHeading start="^\s*\(\.[^\. ]\|INT\. \|EST\. \|EXT\. \|INT\.\/EXT\. \|INT\/EXT\. \|INT \|EST \|EXT \|INT\/EXT \|I\/E \)\c" end="$" contains=fountainSceneNumber,fountainBoneyard,fountainNotes 
+syn region fountainAction matchgroup=fountainSceneHeading start="^\s*\(\.[^\. ]\|INT\. \|EST\. \|EXT\. \|INT\.\/EXT\. \|INT\/EXT\. \|INT \|EST \|EXT \|INT\/EXT \|I\/E \)\(.*\)$\n*\ze\a\c" end="\n\n" contains=fountainBoneyard,fountainNotes,fountainBold,fountainUnderlined,fountainItalic,fountainBoldItalic
 syn region fountainBoneyard start="/\*" end="\*\/" contains=xLineContinue
 syn match xLineContinue "\\$" contained
 syn region fountainSceneNumber start="#" end="#" contained
