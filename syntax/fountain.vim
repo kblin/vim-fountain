@@ -18,7 +18,7 @@ syn match fountainCharacter "\(^\s*@\(.*\)\)\|\(^\(\L\)*$\)"
 syn region fountainDialogue matchgroup=fountainCharacter start="\(^\s*@\(.*\)\)\|\(^\(\L\)*$\)" end="^\s*$" contains=fountainCharacter,fountainParenthetical,fountainBoneyard,fountainNotes,fountainBold,fountainUnderlined,fountainItalic,fountainBoldItalic
 syn match fountainParenthetical "^\s*\((.*)\)$" contained contains=fountainBoneyard,fountainNotes
 syn match fountainLyric "^\s*\~\(.*\)$" contained contains=fountainBoneyard,fountainNotes
-syn match fountainTransition "\(^\(\L\)* TO:$\)\|\(^\(\L\)* IN:$\)\|\(^\(\L\)* CREDITS:$\)" contains=fountainBoneyard,fountainNotes
+syn match fountainTransition "\(^\(\L\)* TO:$\)\|\(^\(\L\)* IN:$\)\|\(^\(\L\)* CREDITS:$\)\|\(^\(\L\)* OUT:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransitionForced "^\s*>\(.*\)" contains=fountainBoneyard,fountainNotes
 syn match fountainCentered "^\s*>\(.*\)<" contains=fountainBoneyard,fountainNotes
 syn match fountainUnderlined "_[^_]*_" 
