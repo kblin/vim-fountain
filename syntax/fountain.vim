@@ -21,6 +21,7 @@ syn match fountainLyric "^\s*\~\(.*\)$" contained contains=fountainBoneyard,foun
 syn match fountainTransition "\(^\(\L\)* TO:$\)\|\(^\(\L\)* IN:$\)\|\(^\(\L\)* CREDITS:$\)\|\(^\(\L\)* OUT:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransition1 "\(^\(\L\)* SHOT:$\)\|\(^\(\L\)* FRAME:$\)\|\(^\(\L\)* WITH:$\)\|\(^\(\L\)* SCREEN:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransition2 "\(^\(\L\)* CUT:$\)\|\(^\(\L\)* OVER:$\)" contains=fountainBoneyard,fountainNotes
+"Single Word Transitions - WIPE doesn't work?
 syn match fountainTransition3 "\(^\DISSOLVE:$\)\|\(^\WIPE:$\)" contains=fountainBoneyard,fountainNotes
 syn match fountainTransitionForced "^\s*>\(.*\)" contains=fountainBoneyard,fountainNotes
 syn match fountainCentered "^\s*>\(.*\)<" contains=fountainBoneyard,fountainNotes
@@ -42,6 +43,7 @@ syn region fountainAction matchgroup=fountainSceneHeading start="^\s*\(\.[^\. ]\
 syn region fountainBoneyard start="/\*" end="\*\/" contains=xLineContinue
 syn match xLineContinue "\\$" contained
 syn region fountainSceneNumber start="#" end="#" contained
+
 
 hi def link fountainTitlePage		    PreProc
 hi def link fountainSection1 			Underlined
