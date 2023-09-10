@@ -47,3 +47,9 @@ Plug 'kblin/vim-fountain'
 
 to your `.vimrc` file.
 
+
+## Fountain-Screenplay-Processor
+
+I am adding all syntax for maximum compatibility with [Fountain Screenplay Processor](https://github.com/xiota/fountain-screenplay-processor).
+
+Please see [that project's documentation](https://github.com/xiota/fountain-screenplay-processor/blob/main/Fountain_Syntax.md) to learn about the extra tagging included here.
